@@ -1,0 +1,19 @@
+@media only screen and (max-width: 767px) {
+    .icons {
+      flex-direction: row!important;
+      justify-content: space-around;
+    }
+    .boxes{
+      position: relative;
+      bottom: -45px;
+    }
+  }
+
+  .background{
+    background-color:#dff8cb !important;
+  }
+
+  .space{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }

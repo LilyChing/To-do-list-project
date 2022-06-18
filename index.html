@@ -31,23 +31,35 @@
     <div class="container">
         <div class="text-center display-4 font-weight-bold font-primary my-5 text-primary d-none d-sm-block">To do list
         </div>
-            <div class="card">
-                <div class="card-body">
-                    <input type="text" class="border-0" id="input1">
+        <div class="card">
+            <div class="card-body">
+                <input type="text" class="border-0" id="input1" style="outline-color: limegreen;">
+            </div>
+        </div>
+        <br>
+        <div class="row row1 d-flex justify-content-center">
+            <div class="col-12 col-md-2 text-center">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Due Date
+                    </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown d-flex justify-content-center">
+                            <input type="date" id="datepicker" name="departuredate" value="20220-02-22">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-2 text-center">
-                    <p class="w-100 mb-0">Due date</p>
-                </div>
-                <div class="col-12 col-md-8 ">
-                    <input type="text" class="w-100">
-                </div>
-                <div class="col-12 col-md-2 text-center d-flex justify-content-center">
-                    <a href="#" id="btna" class="w-100"><span>Add</span></a>
-                </div>
+            <div class="col-12 col-md-8">
+                <i id="clock"
+                    class="fa-regular fa-clock fa-fw d-flex justify-content-center algin-item-center  w-100 fa-2x ">
+                </i></button>
             </div>
+            <div class="col-12 col-md-2 text-center  d-flex justify-content-center">
+                <a href="#" id="btna" class="w-100"><span>Add</span></a>
+            </div>
+        </div>
         <div class="row justify-content-end">
             <a><i class="fa-solid fa-filter"></i><strong>sort</strong></a>
             <select name="sort">

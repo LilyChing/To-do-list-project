@@ -59,3 +59,111 @@
 a{
     padding-top: 20px;
 } */
+
+/*nav sidebar*/
+.navbar{
+    background-color: #3A9057;
+    z-index: 10;
+    transition: width 300ms ease;
+    overflow: hidden;
+}
+.navbar-nav{
+    align-items: center !important;
+}
+.nav-item:last-child{
+    margin-top: auto;
+}
+.nav-item{
+    white-space: nowrap;
+}
+.nav-link{
+    align-items: center !important;
+    background-color:#3A9057;
+    color: black;
+    height: 3rem;
+    transition: background-color 300ms, color 300ms;
+}
+
+.link-text{
+    margin-left: 1rem;
+    display: none;
+}
+.nav-link:hover{
+    background-color: #2c6d42;
+    color: white;
+}
+.logo{
+    background-color: #2c6d42 !important;
+    color: white;
+}
+.logo i{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+.navbar:hover .logo i{
+    transform: rotate(-180deg);
+}
+/*When smaller than Medium screen*/
+@media only screen and (max-width: 768px){
+    .navbar {
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+        justify-content:space-evenly !important;
+    }
+    .nav-item{
+        height: 100%;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-item{
+        width: 100%;
+        align-items: center;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+        height: 100%;
+        width: 100%;
+    }
+    .nav-link {
+        justify-content: space-evenly !important;
+        height: 100%;
+    }
+    .nav-link i{
+        margin-left:0;
+    }
+    .main{
+        margin-top: 5rem;
+    }
+}
+/*When larger Medium screen*/
+@media only screen and (min-width: 768px){
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        width: 100% ;
+    }
+    .nav-item, .logo{
+        width: 100%;
+    }
+    .navbar:hover {
+        width: 11rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+    }
+    .navbar:hover .logo i{
+        margin-left: 2rem;
+    }
+    .nav-link i{
+        margin-left:2rem;
+    }
+    .main {
+        padding-left: 115px !important;
+    }
+}

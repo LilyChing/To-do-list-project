@@ -27,8 +27,9 @@
 #clock{
     text-decoration: none;
 }
-
-
+/*.boxes{
+    align-items: center !important;
+}*/
 /* To do task *//* To do task *//* To do task */
 
 
@@ -52,7 +53,7 @@
     }
     .boxes{
       position: relative;
-      bottom: -96px;
+      bottom: -82px;
       z-index: 2;
     }
 }
@@ -60,10 +61,6 @@
 .iconmb{
     margin-bottom: 20px;
     margin-left: 20px;
-}
-
-.to-do-padding{
-    padding-top: 20px;
 }
 
 /*nav sidebar*/
@@ -110,7 +107,7 @@
     transform: rotate(-180deg);
 }
 /*When smaller than Medium screen*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .navbar {
         top: 0;
         width: 100vw;
@@ -140,7 +137,7 @@
         margin-left:0;
     }
     .main{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 }
 /*When larger Medium screen*/

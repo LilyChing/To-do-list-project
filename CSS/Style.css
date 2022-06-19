@@ -38,11 +38,16 @@
 
 }
 
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 767px) {
     .icons {
         flex-direction: row!important;
         display: flex!important;
-        justify-content: flex-end;
+        justify-content: flex-end !important;
         bottom: -5px;
     }
     .boxes{
@@ -54,6 +59,7 @@
 
 .iconmb{
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .to-do-padding{

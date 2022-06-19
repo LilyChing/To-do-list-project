@@ -113,11 +113,19 @@ button#dropdownMenuButton{
 }
 .profile{
     height: 8rem;
+    margin-bottom: 10px;
 }
 .profile img{
     border-radius: 50%;
     width: 4rem;
     transition: width 300ms;
+}
+.badge{
+    background-color: #DFF8CB;
+    color: black;
+}
+.nav-link:hover .badge{
+    background-color: white;
 }
 /*When smaller than Medium screen*/
 @media only screen and (max-width: 767px){
@@ -166,13 +174,13 @@ button#dropdownMenuButton{
         width: 100%;
     }
     .navbar:hover {
-        width: 11rem;
+        width: 12rem;
     }
     .navbar:hover .link-text {
         display: inline;
     }
     .navbar:hover .logo .link-text{
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
     .navbar:hover .profile img{
         width: 8rem;

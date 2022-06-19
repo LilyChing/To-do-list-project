@@ -11,7 +11,7 @@
 
 #btna {
     color:white;
-    background-color:cornflowerblue;
+    background-color:#C5E7E5;
     padding: 5px 10px;
     text-decoration:none;
     
@@ -20,16 +20,16 @@
     letter-spacing: 0.25em;
     opacity: 0.7;
 }
-.dropdown .btn:hover{
+.dropdown .btn:hover, .dropright .btn:hover{
     opacity: 0.7;
 }
 
 #clock{
     text-decoration: none;
 }
-/*.boxes{
-    align-items: center !important;
-}*/
+button#dropdownMenuButton{
+    background-color: #C5E7E5;
+}
 /* To do task *//* To do task *//* To do task */
 
 
@@ -66,7 +66,7 @@
 /*nav sidebar*/
 .navbar{
     background-color: #3A9057;
-    z-index: 10;
+    z-index: 1050;
     transition: width 300ms ease;
     overflow: hidden;
 }
@@ -107,7 +107,7 @@
     transform: rotate(-180deg);
 }
 /*When smaller than Medium screen*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     .navbar {
         top: 0;
         width: 100vw;

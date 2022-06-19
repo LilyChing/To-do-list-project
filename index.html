@@ -64,36 +64,43 @@
     <div class="container main">
         <div class="text-center display-4 font-weight-bold font-primary py-5 text-primary d-none d-md-block">To do list
         </div>
-        <div class="card">
-            <div class="card-body">
-                <input type="text" class="border-0" id="input1" style="outline-color: limegreen;">
+        <form class="pb-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <input type="text" class="border-0" id="input1" style="outline-color: limegreen;">
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="row row1 d-flex justify-content-center">
-            <div class="col-12 col-md-2 text-center">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Due Date
-                    </button>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                        <div class="dropdown d-flex justify-content-center">
-                            <input type="date" id="datepicker" name="departuredate" value="20220-02-22">
+            <div class="row row1 d-flex justify-content-center ">
+                <div class="col-12 col-md-auto text-center mb-2 mb-md-3">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Due Date:
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown d-flex justify-content-center">
+                                <input type="date" id="datepicker" name="departuredate" value="2022-06-22">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-8">
+                <div class="col-12 col-md-auto mb-2 mb-md-3">
+                    <div class="btn-group dropright">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-clock"></i>
+                                </button>
 
-                <a id="clock" href="#"> <i class=" fa-regular fa-clock fa-fw d-flex justify-content-center algin-item-center w-100 fa-2x ">
-                    </i></a>
-
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+                            <a class="dropdown-item w-100" href="#">Reminds me 1 day early</a>
+                            <a class="dropdown-item w-100" href="#">Reminds me 3 days early</a>
+                            <a class="dropdown-item w-100" href="#">Reminds me 1 week early</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-2 text-center d-flex justify-content-center ml-auto mb-2 mb-md-3">
+                    <input id="btna" class="btn w-100 text-dark" type="Add" value="Add">
+                </div>
             </div>
-            <div class=" col-12 col-md-2 text-center d-flex justify-content-center">
-                <a href="#" id="btna" class="w-100"><span>Add</span></a>
-            </div>
-        </div>
+        </form>
         <div class="row justify-content-end">
             <a><i class="fa-solid fa-filter"></i><strong>sort</strong></a>
             <select name="sort">
@@ -108,7 +115,7 @@
                 </div>
                 <div class="col-md-8 col-12">
                     <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
-                        <a class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></a>
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 
@@ -126,7 +133,7 @@
                 </div>
                 <div class="col-md-8 col-12">
                     <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
-                        <a class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></a>
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 
@@ -144,7 +151,7 @@
                 </div>
                 <div class="col-md-8 col-12">
                     <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
-                        <a class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></a>
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 

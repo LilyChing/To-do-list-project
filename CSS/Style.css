@@ -41,13 +41,13 @@
 @media only screen and (max-width: 767px) {
     .icons {
       flex-direction: row!important;
-      justify-content: space-around !important;
       display: flex!important;
-      
+      left: 221px;
+      bottom: -5px;
     }
     .boxes{
       position: relative;
-      bottom: -45px;
+      bottom: -96px;
       z-index: 2;
     }
 }

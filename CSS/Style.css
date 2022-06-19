@@ -40,10 +40,10 @@
 
 @media only screen and (max-width: 767px) {
     .icons {
-      flex-direction: row!important;
-      display: flex!important;
-      left: 221px;
-      bottom: -5px;
+        flex-direction: row!important;
+        display: flex!important;
+        justify-content: flex-end;
+        bottom: -5px;
     }
     .boxes{
       position: relative;
@@ -104,7 +104,7 @@
     transform: rotate(-180deg);
 }
 /*When smaller than Medium screen*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     .navbar {
         top: 0;
         width: 100vw;

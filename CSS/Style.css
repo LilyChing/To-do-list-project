@@ -19,9 +19,12 @@
 #btna:hover{
     letter-spacing: 0.25em;
     opacity: 0.7;
+    color: white !important;
+    
 }
 .dropdown .btn:hover, .dropright .btn:hover{
     opacity: 0.7;
+    color: white;
 }
 
 #clock{

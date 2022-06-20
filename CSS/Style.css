@@ -43,7 +43,12 @@ button#dropdownMenuButton{
     display: flex;
     justify-content: center;
 }
-
+.icon-hover{
+    color: black;
+}
+.icon-hover:hover{
+    color: #3A9057;
+}
 @media only screen and (max-width: 767px) {
     .icons {
         flex-direction: row!important;
@@ -117,11 +122,11 @@ button#dropdownMenuButton{
 }
 .profile img{
     border-radius: 50%;
-    width: 4rem;
+    width: 3rem;
     transition: width 300ms;
 }
 .badge{
-    background-color: #DFF8CB;
+    background-color: #C5E7E5;
     color: black;
 }
 .nav-link:hover .badge{

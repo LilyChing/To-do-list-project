@@ -11,7 +11,7 @@
 
 #btna {
     color:white;
-    background-color:cornflowerblue;
+    background-color:#C5E7E5;
     padding: 5px 10px;
     text-decoration:none;
     
@@ -20,15 +20,16 @@
     letter-spacing: 0.25em;
     opacity: 0.7;
 }
-.dropdown .btn:hover{
+.dropdown .btn:hover, .dropright .btn:hover{
     opacity: 0.7;
 }
 
 #clock{
     text-decoration: none;
 }
-
-
+button#dropdownMenuButton{
+    background-color: #C5E7E5;
+}
 /* To do task *//* To do task *//* To do task */
 
 
@@ -38,32 +39,43 @@
 
 }
 
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 767px) {
     .icons {
-      flex-direction: row!important;
-      justify-content: space-around !important;
-      display: flex!important;
-      
+        flex-direction: row!important;
+        display: flex!important;
+        justify-content: flex-end !important;
+        bottom: -5px;
     }
     .boxes{
       position: relative;
-      bottom: -45px;
+      bottom: -82px;
       z-index: 2;
     }
 }
 
 .iconmb{
     margin-bottom: 20px;
-}
-
-.to-do-padding{
-    padding-top: 20px;
+    margin-left: 20px;
 }
 
 /*nav sidebar*/
+.logo {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #2c6d42;
+    color: white;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
 .navbar{
     background-color: #3A9057;
-    z-index: 10;
+    z-index: 1050;
     transition: width 300ms ease;
     overflow: hidden;
 }
@@ -92,10 +104,6 @@
     background-color: #2c6d42;
     color: white;
 }
-.logo{
-    background-color: #2c6d42 !important;
-    color: white;
-}
 .logo i{
     transform: rotate(0deg);
     transition: transform 600ms;
@@ -103,21 +111,35 @@
 .navbar:hover .logo i{
     transform: rotate(-180deg);
 }
+.profile{
+    height: 8rem;
+    margin-bottom: 10px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 4rem;
+    transition: width 300ms;
+}
+.badge{
+    background-color: #DFF8CB;
+    color: black;
+}
+.nav-link:hover .badge{
+    background-color: white;
+}
 /*When smaller than Medium screen*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     .navbar {
         top: 0;
         width: 100vw;
         height: 5rem;
         justify-content:space-evenly !important;
     }
-    .nav-item{
-        height: 100%;
-    }
-    .logo {
+    .logo, .profile img{
         display: none;
     }
     .nav-item{
+        height: 100%;
         width: 100%;
         align-items: center;
     }
@@ -134,7 +156,7 @@
         margin-left:0;
     }
     .main{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 }
 /*When larger Medium screen*/
@@ -152,13 +174,16 @@
         width: 100%;
     }
     .navbar:hover {
-        width: 11rem;
+        width: 12rem;
     }
     .navbar:hover .link-text {
         display: inline;
     }
-    .navbar:hover .logo i{
-        margin-left: 2rem;
+    .navbar:hover .logo .link-text{
+        padding-left: 2rem;
+    }
+    .navbar:hover .profile img{
+        width: 8rem;
     }
     .nav-link i{
         margin-left:2rem;

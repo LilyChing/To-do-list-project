@@ -22,9 +22,17 @@
     <!-- Sidebar -->
     <nav class="navbar position-fixed py-0 py-md-3 px-0 m-0">
         <ul class="navbar-nav h-100">
-            <li class="logo rounded-circle">
+            <li class="profile d-flex align-items-end">
+                <img src="https://img.freepik.com/free-photo/asian-woman-posing-looking-camera_23-2148255359.jpg?t=st=1655637380~exp=1655637980~hmac=6d0a9d429604f6f0f2bcc08f55a43548813c276126c8f97e9fde6920bf3b1d90&w=1380" alt="profile picture">
+            </li>
+            <li class="logo">
                 <a href="#" class="nav-link d-flex text-decoration-none p-0">
+<<<<<<< HEAD
                     <i class="fa-solid fa-circle-chevron-left"></i>
+=======
+                    <span class="link-text">User</span>
+                    <i class="fa-solid fa-circle-chevron-left"></i>  
+>>>>>>> refs/remotes/origin/main
                 </a>
             </li>
             <li class="nav-item">
@@ -36,19 +44,19 @@
             <li class="nav-item ">
                 <a href="#" class="nav-link d-flex text-decoration-none p-0">
                     <i class="fa-solid fa-list-ul"></i>
-                    <span class="link-text">To-Do List</span>
+                    <span class="link-text">To-Do List<span class="badge ml-1">3</span></span>
                 </a>
             </li>
             <li class="nav-item ">
                 <a href="#" class="nav-link d-flex text-decoration-none p-0">
                     <i class="fa-solid fa-list-check"></i>
-                    <span class="link-text">Doing List</span>
+                    <span class="link-text">Doing List<span class="badge  ml-1">5</span></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link d-flex text-decoration-none p-0">
                     <i class="fa-solid fa-circle-check"></i>
-                    <span class="link-text">Done List</span>
+                    <span class="link-text">Done List<span class="badge ml-1">1</span></span>
                 </a>
             </li>
             <li class="nav-item">
@@ -62,39 +70,45 @@
 
     <!-- input form-->
     <div class="container main">
-        <div class="text-center display-4 font-weight-bold font-primary py-5 text-primary d-none d-sm-block">To do list
+        <div class="text-center display-4 font-weight-bold py-5 d-none d-md-block">To do list
         </div>
-        <div class="card">
-            <div class="card-body">
-                <input type="text" class="border-0" id="input1" style="outline-color: limegreen;">
+        <form class="pb-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <input type="text" class="border-0" id="input1" style="outline-color: limegreen;">
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="row row1 d-flex justify-content-center">
-            <div class="col-12 col-md-2 text-center">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Due Date
-                    </button>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                        <div class="dropdown d-flex justify-content-center">
-                            <input type="date" id="datepicker" name="departuredate" value="20220-02-22">
+            <div class="row row1 d-flex justify-content-center ">
+                <div class="col-12 col-md-auto text-center mb-2 mb-md-3">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Due Date:
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown d-flex justify-content-center">
+                                <input type="date" id="datepicker" name="departuredate" value="2022-06-22">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-8">
+                <div class="col-12 col-md-auto mb-2 mb-md-3">
+                    <div class="btn-group dropright">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-clock"></i>
+                                </button>
 
-                <a id="clock" href="#"> <i class=" fa-regular fa-clock fa-fw d-flex justify-content-center algin-item-center w-100
-                            fa-2x ">
-                    </i></a>
-
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+                            <a class="dropdown-item w-100" href="#">Reminds me 1 day early</a>
+                            <a class="dropdown-item w-100" href="#">Reminds me 3 days early</a>
+                            <a class="dropdown-item w-100" href="#">Reminds me 1 week early</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-2 text-center d-flex justify-content-center ml-auto mb-2 mb-md-3">
+                    <input id="btna" class="btn w-100 text-dark" type="Add" value="Add">
+                </div>
             </div>
-            <div class=" col-12 col-md-2 text-center d-flex justify-content-center">
-                <a href="#" id="btna" class="w-100"><span>Add</span></a>
-            </div>
-        </div>
+        </form>
         <div class="row justify-content-end">
             <a><i class="fa-solid fa-filter"></i><strong>sort</strong></a>
             <select name="sort">
@@ -103,66 +117,61 @@
             </select>
         </div>
         <div class="space">
-            <div class="row">
-                <div class="col-2 boxes">
+            <div class="row ">
+                <div class="col-2 boxes d-flex justify-content-center align-items-center">
                     <input type="checkbox">
                 </div>
-                <div class="col-md-8 col-12 ">
-                    <div class="card text-center" style="background-color:#dff8cb;">
-                        <a class="to-do-padding">to do task<img src="img/icon.png" width="50px" align="right"></a>
+                <div class="col-md-8 col-12">
+                    <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 
-                <div class="col-2 icons" style="display: flex;flex-direction:column; margin:auto;">
-                    <i class="fa-solid fa-pen iconmb"></i>
-                    <i class="fa-solid fa-trash-can iconmb"></i>
-                    <i class="fa-solid fa-arrows-up-down-left-right iconmb"></i>
+                <div class="col-12 col-md-2 icons" style="display: flex;flex-direction:column;">
+                    <a href="#"><i class="fa-solid fa-pen iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash-can iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrows-up-down-left-right iconmb text-dark"></i></a>
                 </div>
             </div>
         </div>
         <div class="space">
-            <div class="row">
-                <div class="col-2 boxes">
+            <div class="row ">
+                <div class="col-2 boxes d-flex justify-content-center align-items-center">
                     <input type="checkbox">
                 </div>
                 <div class="col-md-8 col-12">
-                    <div class="card text-center" style="background-color:#dff8cb;">
-                        <a class="to-do-padding">to do task<img src="img/icon.png" width="50px" align="right"></a>
+                    <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 
-                <div class="col-2 icons" style="display: flex;flex-direction:column; margin:auto;">
-                    <i class="fa-solid fa-pen iconmb"></i>
-                    <i class="fa-solid fa-trash-can iconmb"></i>
-                    <i class="fa-solid fa-arrows-up-down-left-right iconmb"></i>
+                <div class="col-12 col-md-2 icons" style="display: flex;flex-direction:column;">
+                    <a href="#"><i class="fa-solid fa-pen iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash-can iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrows-up-down-left-right iconmb text-dark"></i></a>
                 </div>
             </div>
         </div>
         <div class="space">
-            <div class="row">
-                <div class="col-2 boxes">
+            <div class="row ">
+                <div class="col-2 boxes d-flex justify-content-center align-items-center">
                     <input type="checkbox">
                 </div>
                 <div class="col-md-8 col-12">
-                    <div class="card text-center" style="background-color:#dff8cb;">
-                        <a class="to-do-padding">to do task<img src="img/icon.png" width="50px" align="right"></a>
+                    <div class="card text-center h-100 justify-content-center" style="background-color:#dff8cb;">
+                        <div class="d-flex justify-content-between align-items-center px-3"><span>To do task</span><img src="img/icon.png" width="50px" align="right"></div>
                     </div>
                 </div>
 
-                <div class="col-2 icons" style="display: flex;flex-direction:column; margin:auto;">
-                    <i class="fa-solid fa-pen iconmb"></i>
-                    <i class="fa-solid fa-trash-can iconmb"></i>
-                    <i class="fa-solid fa-arrows-up-down-left-right iconmb"></i>
+                <div class="col-12 col-md-2 icons" style="display: flex;flex-direction:column;">
+                    <a href="#"><i class="fa-solid fa-pen iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash-can iconmb text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrows-up-down-left-right iconmb text-dark"></i></a>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
+    
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
